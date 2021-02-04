@@ -73,8 +73,8 @@ class Tree:
             rigth_val = lst.pop(0)
             if left_val != '$':
                 node.left = Tree(left_val)
-                queue.append(head.left)
+                queue.append(node.left)
             if rigth_val != '$':
                 node.right = Tree(rigth_val)
-                queue.append(head.right)
+                queue.append(node.right)
         return head
